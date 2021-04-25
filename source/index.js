@@ -112,9 +112,7 @@ var unpackage = function (coverage, absPath) {
     });
 
     // patch to work with RSpec/Ruby on Rails cobertura plugin:
-    return classesMap.filter(function (el) {
-        return el != null;
-    }
+    return classesMap.filter((el) => el != null);
 };
 
 parse.parseContent = function (xml, cb, absPath) {
